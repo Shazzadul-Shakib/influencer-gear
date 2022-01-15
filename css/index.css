@@ -48,13 +48,19 @@
     font-size: 28px;
 }
 
-
-
 /* !-----------------------------
-!         Responsive part       !
+!     Introductory section      !
 !-------------------------------*/
 
-@media (max-width: 688px) {
+
+/* !-----------------------------------------------------
+!                Responsive part-Mobile                 !
+!-----------------------------------------------------*/
+
+@media (max-width: 767px) {
+/* !-----------------------------
+!         Header section        !
+!-------------------------------*/   
     .navbar{
         justify-content: space-between;
         align-items: center;
@@ -72,5 +78,28 @@
     }
     .navbar___cart>.fa-cart-arrow-down{
         font-size: 24px;
+    }
+}
+
+/* !-----------------------------------------------------
+!                Responsive part-Tablet                 !
+!------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+/* !-----------------------------
+!         Header section        !
+!-------------------------------*/
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 50px 20px 50px;
+    }
+    .navbar__name{
+        font-size: 16px;
+    }
+    .navbar__menues>ul>li{
+        margin-right: 24px;
+    }
+    .navbar___cart>.fa-cart-arrow-down{
+        font-size: 22px;
     }
 }
