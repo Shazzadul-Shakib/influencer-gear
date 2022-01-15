@@ -200,6 +200,47 @@ body{
     text-decoration: none;
     font-size: 18px;
 }
+
+/* !-----------------------------
+!         Customers section     !
+!-------------------------------*/
+.customer-feedback{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font);
+    font-weight: 700;
+}
+.left-angle>a,.right-angle>a{
+    text-decoration: none;
+    color: var(--star-clr);
+    font-size: 40px;
+}
+.customer-1,.customer-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.customer-1{
+    width: 40%;
+    background-color: #BFCDD9;
+}
+.customer-1__pic,.customer-2__pic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.customer-1__msg,.customer-2__msg{
+    padding: 10px 30px 30px 30px;
+}
+.customer-1__msg span,.customer-2__msg span{
+    font-size: 30px;
+}
+.customer-2{
+    width: 40%;
+    background-color: #BFCDD9;
+}
 /* !-----------------------------
 !         Footer section        !
 !-------------------------------*/
@@ -210,6 +251,7 @@ footer{
     color: var(--white-clr);
     text-align: center;
     padding: 50px;
+    margin-top: 50px;
 }
 footer>h1{
     color: var(--star-clr);
@@ -220,6 +262,18 @@ footer>h1{
 .fa-globe{
     padding: 15px;
     color: var(--star-clr);
+}
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+}
+.fa-youtube:hover{
+    transform: scale(1.2);
+}
+.fa-instagram-square:hover{
+    transform: scale(1.2);
+}
+.fa-globe:hover{
+    transform: scale(1.2);
 }
 
 /* !-----------------------------------------------------
@@ -318,7 +372,24 @@ text-align: center;
   }
   .see-more{
     bottom:20px;
-    right: 10px;
+    right: 20%;
+}
+
+/* !-----------------------------
+!         Customers section     !
+!-------------------------------*/
+.customer-feedback{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font);
+    font-weight: 700;
+}
+.customer-1{
+    width: 60%;
+}
+.customer-2{
+    display: none;
 }
 /* !-----------------------------
 !         Footer section        !
