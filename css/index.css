@@ -57,6 +57,7 @@ body{
 }
 .navbar___cart>.fa-cart-arrow-down{
     font-size: 28px;
+    color: var(--star-clr);
 }
 
 /* !-----------------------------
@@ -131,9 +132,11 @@ body{
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     grid-gap: 30px;
-    /* margin: 30px 196px; */
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-right: 90px;
+    margin-left: 90px;
+    padding-bottom: 100px;
+    position: relative;
 }
 .collection{
     width: 325px;
@@ -144,17 +147,26 @@ body{
                 0.3em 0.3em 1em rgba(0,0,0,0.3);
     font-family: var(--font);
     padding: 15px;
-    border-radius: 7px;
+    border-radius: 7px;  
 }
 .collections>h1{
     /* margin-left: 76px; */
     text-align: center;
     color: var(--black-clr);
 }
+.collection__pic{
+    overflow: hidden;     
+}
 .collection__pic>img{
   width: 290px;
   height: 246px;
+  
 }
+.collection__pic:hover img{
+    transform: scale(1.2);
+    transition: transform .8s ease-in-out;
+
+  }
 .collection__title>h1{
     font-size: 24px;
 }
@@ -180,6 +192,14 @@ body{
     color: var(--black-clr);
 }
 
+.see-more{
+    position: absolute;
+    bottom:50px;
+    right: 100px;
+    color: var(--star-clr);
+    text-decoration: none;
+    font-size: 18px;
+}
 /* !-----------------------------
 !         Footer section        !
 !-------------------------------*/
@@ -198,7 +218,7 @@ footer>h1{
 .fa-youtube,
 .fa-instagram-square,
 .fa-globe{
-    padding: 20px;
+    padding: 15px;
     color: var(--star-clr);
 }
 
@@ -296,8 +316,11 @@ text-align: center;
     width: 280px;
     height: 246px;
   }
-
-    /* !-----------------------------
+  .see-more{
+    bottom:20px;
+    right: 10px;
+}
+/* !-----------------------------
 !         Footer section        !
 !-------------------------------*/
 .footer{
@@ -320,14 +343,8 @@ text-align: center;
 .fa-globe{
     padding: 5px;
 }
-  
-
-
-
 
 }
-
-
 
 
 /* !-----------------------------------------------------
@@ -417,22 +434,13 @@ text-align: center;
   /* !-----------------------------
 !         Footer section        !
 !-------------------------------*/
-.footer{
-    width: 100%;
-    height: 240px;
-    background-color: #0A0826;
-    color: var(--white-clr);
-    text-align: center;
-    padding: 50px;
-}
-.footer>h1{
-    color: var(--star-clr);
-}
+
+
 .fa-facebook-square,
 .fa-youtube,
 .fa-instagram-square,
 .fa-globe{
-    padding: 15px;
+    padding: 10px;
     color: var(--star-clr);
 }
 }
