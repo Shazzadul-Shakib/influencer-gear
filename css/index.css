@@ -224,6 +224,7 @@ body{
 }
 
 .customer-1{
+    height: 362px;
     width: 40%;
     background-color: #BFCDD9;
 }
@@ -238,6 +239,7 @@ body{
     font-size: 30px;
 }
 .customer-2{
+    height: 362px;
     width: 40%;
     background-color: #BFCDD9;
 }
